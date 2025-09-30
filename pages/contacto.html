@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Artesanías Únicas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <div class="custom-logo">
+                    <span class="logo-icon">🎨</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-main">Artesanías Únicas</span>
+                    <span class="brand-sub">Hecho a mano</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-link" href="carrito.html">
+                            🛒 Carrito (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="section-title">Contáctanos</h1>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 style="color: var(--secondary-color);">Información de Contacto</h3>
+                        <div class="mb-4">
+                            <h5>📍 Dirección</h5>
+                            <p>Calle de las Artesanías #123<br>
+                            Centro Histórico<br>
+                            Bogotá, Colombia</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>📞 Teléfono</h5>
+                            <p>+57 (1) 234-5678<br>
+                            WhatsApp: +57 300 123 4567</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>✉️ Email</h5>
+                            <p>info@artesaniasunicas.com<br>
+                            ventas@artesaniasunicas.com</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5>🕒 Horarios de Atención</h5>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+                            Sábados: 9:00 AM - 4:00 PM<br>
+                            Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3 style="color: var(--secondary-color);">Envíanos un Mensaje</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre Completo *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <select class="form-control" id="subject" name="subject">
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta General</option>
+                                    <option value="pedido">Información sobre Pedido</option>
+                                    <option value="producto">Consulta sobre Producto</option>
+                                    <option value="reclamo">Reclamo o Sugerencia</option>
+                                    <option value="mayorista">Ventas al Por Mayor</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" 
+                                         placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <h3 class="text-center mb-4" style="color: var(--secondary-color);">Preguntas Frecuentes</h3>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq1">
+                                    ¿Cuánto tiempo tarda el envío?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Los envíos dentro de Colombia tardan entre 3-5 días hábiles. Para envíos a otras 
+                                    ciudades principales, el tiempo puede ser de 5-7 días hábiles.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq2">
+                                    ¿Ofrecen envío gratis?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, ofrecemos envío gratis para compras superiores a $100,000 COP dentro de Colombia.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq3">
+                                    ¿Puedo personalizar un producto?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    ¡Por supuesto! Muchos de nuestros productos pueden ser personalizados. Contáctanos 
+                                    para discutir tus necesidades específicas y te daremos un presupuesto.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq4">
+                                    ¿Qué métodos de pago aceptan?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aceptamos transferencias bancarias, PSE, tarjetas de crédito y débito, y pagos 
+                                    contra entrega en ciertas ciudades.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <h3 style="color: var(--secondary-color);">¡Síguenos en Redes Sociales!</h3>
+                    <p>Mantente al día con nuestros últimos productos y promociones</p>
+                    <div class="mt-3">
+                        <button class="btn btn-outline-primary me-2">Facebook</button>
+                        <button class="btn btn-outline-primary me-2">Instagram</button>
+                        <button class="btn btn-outline-primary me-2">WhatsApp</button>
+                        <button class="btn btn-outline-primary">YouTube</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Artesanías Únicas</h5>
+                    <p>Conectamos artesanos con el mundo, llevando tradición y calidad a tu hogar.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Información</h5>
+                    <p>Visitas: <span id="visit-counter">0</span></p>
+                    <p>Productos: <span id="product-counter">0</span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Artesanías Únicas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
